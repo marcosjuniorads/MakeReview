@@ -3,4 +3,7 @@
     <string name="login_hint_user">Digite seu e-mail</string>
     <string name="login_hint_password">Digite sua senha</string>
     <string name="login_register">Não tem uma conta ainda? Crie já! </string>
+    <string name="login_forget">Esqueceu a senha? </string>
+    <string name="login_lblEntre_text">Entre</string>
+    <string name="login_btnEntre_text">Entrar</string>
 </resources>
