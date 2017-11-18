@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
     android:background="@android:color/transparent"
     tools:context="com.marcosdefreitas.maakereview.login">
 
@@ -34,11 +33,13 @@
             android:layout_above="@+id/lbl_login_criarconta"
             android:layout_alignParentBottom="false"
             android:layout_centerInParent="true"
+            android:layout_toStartOf="@+id/space_lateral_l"
+            android:layout_toEndOf="@+id/space_lateral_r"
             android:elegantTextHeight="false"
             android:fontFamily="@font/unica_one"
             android:text="@string/login_btnEntre_text"
             android:textColorLink="@android:color/holo_purple"
-            android:textSize="30sp"/>
+            android:textSize="30sp" />
 
         <TextView
             android:id="@+id/lbl_login_criarconta"
@@ -46,10 +47,11 @@
             android:layout_height="wrap_content"
             android:layout_above="@+id/space_02"
             android:layout_alignParentBottom="false"
-            android:fontFamily="@font/raleway_medium"
+            android:fontFamily="@font/quicksand"
             android:lineSpacingExtra="10sp"
             android:text="@string/login_register"
             android:textAlignment="center"
+            android:textColor="#468499"
             android:textSize="16sp" />
 
         <Space
@@ -65,26 +67,30 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/space_03"
             android:layout_centerInParent="true"
-            android:layout_toLeftOf="@+id/space_lateral_l"
-            android:layout_toRightOf="@+id/space_lateral_r"
+            android:layout_toEndOf="@+id/space_lateral_r"
+            android:layout_toStartOf="@+id/space_lateral_l"
             android:drawableEnd="@android:drawable/ic_dialog_email"
             android:ems="10"
             android:fontFamily="@font/raleway_medium"
             android:hint="@string/login_hint_user"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="#468499" />
 
         <EditText
             android:id="@+id/txt_senha_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/txt_user_login"
-            android:layout_toLeftOf="@+id/space_lateral_l"
-            android:layout_toRightOf="@+id/space_lateral_r"
+            android:layout_toEndOf="@+id/space_lateral_r"
+            android:layout_toStartOf="@+id/space_lateral_l"
             android:drawableEnd="@android:drawable/ic_lock_idle_lock"
             android:ems="10"
             android:fontFamily="@font/raleway_medium"
             android:hint="@string/login_hint_password"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="#468499" />
 
         <Space
             android:id="@+id/space_03"
@@ -93,31 +99,33 @@
             android:layout_alignParentBottom="false"
             android:layout_alignParentTop="false"
             android:layout_below="@+id/imageView2"
-            android:layout_toRightOf="@+id/space_lateral_r" />
+            android:layout_toEndOf="@+id/space_lateral_r" />
 
         <TextView
             android:id="@+id/lbl_login_forget"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/txt_senha_login"
-            android:layout_toLeftOf="@+id/space_lateral_l"
-            android:layout_toRightOf="@+id/space_lateral_r"
+            android:layout_toStartOf="@+id/space_lateral_l"
+            android:layout_toEndOf="@+id/space_lateral_r"
+            android:fontFamily="@font/quicksand"
             android:text="@string/login_forget"
-            android:textAlignment="textEnd" />
+            android:textAlignment="textEnd"
+            android:textColor="#468499" />
 
         <Space
             android:id="@+id/space_lateral_r"
             android:layout_width="25dp"
             android:layout_height="match_parent"
-            android:layout_above="@+id/btn_entrar_login"
-            android:layout_alignParentLeft="true"
+            android:layout_above="@+id/lbl_login_criarconta"
+            android:layout_alignParentStart="true"
             android:layout_below="@+id/imageView2" />
 
         <Space
             android:id="@+id/space_lateral_l"
             android:layout_width="25dp"
             android:layout_height="match_parent"
-            android:layout_above="@+id/btn_entrar_login"
+            android:layout_above="@+id/lbl_login_criarconta"
             android:layout_alignParentEnd="true"
             android:layout_below="@+id/imageView2" />
 
